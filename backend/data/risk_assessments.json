@@ -1,0 +1,1062 @@
+[
+  {
+    "id": "49ff2720-d8e0-4749-83d9-ab23fe18c4e0",
+    "disaster_type": "flood",
+    "result": {
+      "risk_level": "critical",
+      "score": 100,
+      "max_score": 100,
+      "factors": [
+        {
+          "name": "Rainfall Amount",
+          "value": "190.0 mm",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Water Level",
+          "value": "9.5 m",
+          "impact": 35,
+          "category": "high"
+        },
+        {
+          "name": "Previous Flooding History",
+          "value": "Yes",
+          "impact": 15,
+          "category": "medium"
+        },
+        {
+          "name": "Soil Saturation",
+          "value": "88.0%",
+          "impact": 10,
+          "category": "medium"
+        }
+      ],
+      "explanation": "Extreme flood risk. Immediate evacuation recommended. All contributing factors indicate severe conditions.",
+      "precautions": [
+        "Evacuate immediately to higher ground",
+        "Call emergency services: 112",
+        "Do not attempt to drive through flooded roads",
+        "Disconnect electrical appliances",
+        "Take important documents"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official meteorological forecast.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T18:50:58.994469+00:00"
+  },
+  {
+    "id": "928bfb14-f8d7-4813-bb02-95db3f0ee212",
+    "disaster_type": "landslide",
+    "result": {
+      "risk_level": "critical",
+      "score": 95,
+      "max_score": 103,
+      "factors": [
+        {
+          "name": "Rainfall Intensity",
+          "value": "55.0 mm/hr",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Soil Moisture",
+          "value": "92.0%",
+          "impact": 30,
+          "category": "high"
+        },
+        {
+          "name": "Slope Angle",
+          "value": "45.0°",
+          "impact": 12,
+          "category": "high"
+        },
+        {
+          "name": "Historical Landslides",
+          "value": "Yes",
+          "impact": 8,
+          "category": "medium"
+        },
+        {
+          "name": "Vegetation Cover",
+          "value": "Sparse",
+          "impact": 5,
+          "category": "low"
+        }
+      ],
+      "explanation": "Extreme landslide risk. Immediate evacuation of slope-adjacent areas required.",
+      "precautions": [
+        "Evacuate immediately from slope-adjacent areas",
+        "Do not attempt to cross landslide-prone roads",
+        "Call emergency services: 112",
+        "Watch for warning signs: ground cracks, unusual sounds"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official geological survey.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T18:50:58.995889+00:00"
+  },
+  {
+    "id": "3a67bd58-83e7-4830-b1dd-a0cf5573372c",
+    "disaster_type": "flood",
+    "result": {
+      "risk_level": "critical",
+      "score": 100,
+      "max_score": 100,
+      "factors": [
+        {
+          "name": "Rainfall Amount",
+          "value": "190.0 mm",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Water Level",
+          "value": "9.5 m",
+          "impact": 35,
+          "category": "high"
+        },
+        {
+          "name": "Previous Flooding History",
+          "value": "Yes",
+          "impact": 15,
+          "category": "medium"
+        },
+        {
+          "name": "Soil Saturation",
+          "value": "88.0%",
+          "impact": 10,
+          "category": "medium"
+        }
+      ],
+      "explanation": "Extreme flood risk. Immediate evacuation recommended. All contributing factors indicate severe conditions.",
+      "precautions": [
+        "Evacuate immediately to higher ground",
+        "Call emergency services: 112",
+        "Do not attempt to drive through flooded roads",
+        "Disconnect electrical appliances",
+        "Take important documents"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official meteorological forecast.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T18:52:34.198883+00:00"
+  },
+  {
+    "id": "2cde4309-db7b-460b-bf82-045b408f0c08",
+    "disaster_type": "landslide",
+    "result": {
+      "risk_level": "critical",
+      "score": 95,
+      "max_score": 103,
+      "factors": [
+        {
+          "name": "Rainfall Intensity",
+          "value": "55.0 mm/hr",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Soil Moisture",
+          "value": "92.0%",
+          "impact": 30,
+          "category": "high"
+        },
+        {
+          "name": "Slope Angle",
+          "value": "45.0°",
+          "impact": 12,
+          "category": "high"
+        },
+        {
+          "name": "Historical Landslides",
+          "value": "Yes",
+          "impact": 8,
+          "category": "medium"
+        },
+        {
+          "name": "Vegetation Cover",
+          "value": "Sparse",
+          "impact": 5,
+          "category": "low"
+        }
+      ],
+      "explanation": "Extreme landslide risk. Immediate evacuation of slope-adjacent areas required.",
+      "precautions": [
+        "Evacuate immediately from slope-adjacent areas",
+        "Do not attempt to cross landslide-prone roads",
+        "Call emergency services: 112",
+        "Watch for warning signs: ground cracks, unusual sounds"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official geological survey.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T18:52:34.200581+00:00"
+  },
+  {
+    "id": "8cc0f1bb-894e-4075-b83e-4b6d91c97354",
+    "disaster_type": "flood",
+    "result": {
+      "risk_level": "critical",
+      "score": 100,
+      "max_score": 100,
+      "factors": [
+        {
+          "name": "Rainfall Amount",
+          "value": "190.0 mm",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Water Level",
+          "value": "9.5 m",
+          "impact": 35,
+          "category": "high"
+        },
+        {
+          "name": "Previous Flooding History",
+          "value": "Yes",
+          "impact": 15,
+          "category": "medium"
+        },
+        {
+          "name": "Soil Saturation",
+          "value": "88.0%",
+          "impact": 10,
+          "category": "medium"
+        }
+      ],
+      "explanation": "Extreme flood risk. Immediate evacuation recommended. All contributing factors indicate severe conditions.",
+      "precautions": [
+        "Evacuate immediately to higher ground",
+        "Call emergency services: 112",
+        "Do not attempt to drive through flooded roads",
+        "Disconnect electrical appliances",
+        "Take important documents"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official meteorological forecast.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T20:13:54.486225+00:00"
+  },
+  {
+    "id": "d741febb-7945-4464-ba25-45afa90b2242",
+    "disaster_type": "landslide",
+    "result": {
+      "risk_level": "critical",
+      "score": 95,
+      "max_score": 103,
+      "factors": [
+        {
+          "name": "Rainfall Intensity",
+          "value": "55.0 mm/hr",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Soil Moisture",
+          "value": "92.0%",
+          "impact": 30,
+          "category": "high"
+        },
+        {
+          "name": "Slope Angle",
+          "value": "45.0°",
+          "impact": 12,
+          "category": "high"
+        },
+        {
+          "name": "Historical Landslides",
+          "value": "Yes",
+          "impact": 8,
+          "category": "medium"
+        },
+        {
+          "name": "Vegetation Cover",
+          "value": "Sparse",
+          "impact": 5,
+          "category": "low"
+        }
+      ],
+      "explanation": "Extreme landslide risk. Immediate evacuation of slope-adjacent areas required.",
+      "precautions": [
+        "Evacuate immediately from slope-adjacent areas",
+        "Do not attempt to cross landslide-prone roads",
+        "Call emergency services: 112",
+        "Watch for warning signs: ground cracks, unusual sounds"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official geological survey.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T20:13:54.487904+00:00"
+  },
+  {
+    "id": "e4c74ab4-6197-400d-8d39-e36f87e7d737",
+    "disaster_type": "flood",
+    "result": {
+      "risk_level": "critical",
+      "score": 100,
+      "max_score": 100,
+      "factors": [
+        {
+          "name": "Rainfall Amount",
+          "value": "190.0 mm",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Water Level",
+          "value": "9.5 m",
+          "impact": 35,
+          "category": "high"
+        },
+        {
+          "name": "Previous Flooding History",
+          "value": "Yes",
+          "impact": 15,
+          "category": "medium"
+        },
+        {
+          "name": "Soil Saturation",
+          "value": "88.0%",
+          "impact": 10,
+          "category": "medium"
+        }
+      ],
+      "explanation": "Extreme flood risk. Immediate evacuation recommended. All contributing factors indicate severe conditions.",
+      "precautions": [
+        "Evacuate immediately to higher ground",
+        "Call emergency services: 112",
+        "Do not attempt to drive through flooded roads",
+        "Disconnect electrical appliances",
+        "Take important documents"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official meteorological forecast.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T20:14:51.414788+00:00"
+  },
+  {
+    "id": "c47eaeb5-3931-4d85-90e8-ae6e81fe0199",
+    "disaster_type": "landslide",
+    "result": {
+      "risk_level": "critical",
+      "score": 95,
+      "max_score": 103,
+      "factors": [
+        {
+          "name": "Rainfall Intensity",
+          "value": "55.0 mm/hr",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Soil Moisture",
+          "value": "92.0%",
+          "impact": 30,
+          "category": "high"
+        },
+        {
+          "name": "Slope Angle",
+          "value": "45.0°",
+          "impact": 12,
+          "category": "high"
+        },
+        {
+          "name": "Historical Landslides",
+          "value": "Yes",
+          "impact": 8,
+          "category": "medium"
+        },
+        {
+          "name": "Vegetation Cover",
+          "value": "Sparse",
+          "impact": 5,
+          "category": "low"
+        }
+      ],
+      "explanation": "Extreme landslide risk. Immediate evacuation of slope-adjacent areas required.",
+      "precautions": [
+        "Evacuate immediately from slope-adjacent areas",
+        "Do not attempt to cross landslide-prone roads",
+        "Call emergency services: 112",
+        "Watch for warning signs: ground cracks, unusual sounds"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official geological survey.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T20:14:51.414788+00:00"
+  },
+  {
+    "id": "5037900e-355c-485e-b06d-151990f0c1bc",
+    "disaster_type": "flood",
+    "result": {
+      "risk_level": "critical",
+      "score": 100,
+      "max_score": 100,
+      "factors": [
+        {
+          "name": "Rainfall Amount",
+          "value": "180.0 mm",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Water Level",
+          "value": "9.2 m",
+          "impact": 35,
+          "category": "high"
+        },
+        {
+          "name": "Previous Flooding History",
+          "value": "Yes",
+          "impact": 15,
+          "category": "medium"
+        },
+        {
+          "name": "Soil Saturation",
+          "value": "90.0%",
+          "impact": 10,
+          "category": "medium"
+        }
+      ],
+      "explanation": "Extreme flood risk. Immediate evacuation recommended. All contributing factors indicate severe conditions.",
+      "precautions": [
+        "Evacuate immediately to higher ground",
+        "Call emergency services: 112",
+        "Do not attempt to drive through flooded roads",
+        "Disconnect electrical appliances",
+        "Take important documents"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official meteorological forecast.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T20:16:45.391675+00:00"
+  },
+  {
+    "id": "f89fa5d0-5f77-4294-a5c5-5ab87b003281",
+    "disaster_type": "landslide",
+    "result": {
+      "risk_level": "critical",
+      "score": 103,
+      "max_score": 103,
+      "factors": [
+        {
+          "name": "Rainfall Intensity",
+          "value": "55.0 mm/hr",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Soil Moisture",
+          "value": "95.0%",
+          "impact": 30,
+          "category": "high"
+        },
+        {
+          "name": "Slope Angle",
+          "value": "50.0°",
+          "impact": 20,
+          "category": "high"
+        },
+        {
+          "name": "Historical Landslides",
+          "value": "Yes",
+          "impact": 8,
+          "category": "medium"
+        },
+        {
+          "name": "Vegetation Cover",
+          "value": "Sparse",
+          "impact": 5,
+          "category": "low"
+        }
+      ],
+      "explanation": "Extreme landslide risk. Immediate evacuation of slope-adjacent areas required.",
+      "precautions": [
+        "Evacuate immediately from slope-adjacent areas",
+        "Do not attempt to cross landslide-prone roads",
+        "Call emergency services: 112",
+        "Watch for warning signs: ground cracks, unusual sounds"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official geological survey.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T20:16:47.457660+00:00"
+  },
+  {
+    "id": "6a193b46-0ed1-4e45-9347-b50a6b108c41",
+    "disaster_type": "flood",
+    "result": {
+      "risk_level": "critical",
+      "score": 100,
+      "max_score": 100,
+      "factors": [
+        {
+          "name": "Rainfall Amount",
+          "value": "190.0 mm",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Water Level",
+          "value": "9.5 m",
+          "impact": 35,
+          "category": "high"
+        },
+        {
+          "name": "Previous Flooding History",
+          "value": "Yes",
+          "impact": 15,
+          "category": "medium"
+        },
+        {
+          "name": "Soil Saturation",
+          "value": "88.0%",
+          "impact": 10,
+          "category": "medium"
+        }
+      ],
+      "explanation": "Extreme flood risk. Immediate evacuation recommended. All contributing factors indicate severe conditions.",
+      "precautions": [
+        "Evacuate immediately to higher ground",
+        "Call emergency services: 112",
+        "Do not attempt to drive through flooded roads",
+        "Disconnect electrical appliances",
+        "Take important documents"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official meteorological forecast.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T20:29:03.812612+00:00"
+  },
+  {
+    "id": "11536a7e-2a02-4717-b6de-337a83e6ff25",
+    "disaster_type": "landslide",
+    "result": {
+      "risk_level": "critical",
+      "score": 95,
+      "max_score": 103,
+      "factors": [
+        {
+          "name": "Rainfall Intensity",
+          "value": "55.0 mm/hr",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Soil Moisture",
+          "value": "92.0%",
+          "impact": 30,
+          "category": "high"
+        },
+        {
+          "name": "Slope Angle",
+          "value": "45.0°",
+          "impact": 12,
+          "category": "high"
+        },
+        {
+          "name": "Historical Landslides",
+          "value": "Yes",
+          "impact": 8,
+          "category": "medium"
+        },
+        {
+          "name": "Vegetation Cover",
+          "value": "Sparse",
+          "impact": 5,
+          "category": "low"
+        }
+      ],
+      "explanation": "Extreme landslide risk. Immediate evacuation of slope-adjacent areas required.",
+      "precautions": [
+        "Evacuate immediately from slope-adjacent areas",
+        "Do not attempt to cross landslide-prone roads",
+        "Call emergency services: 112",
+        "Watch for warning signs: ground cracks, unusual sounds"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official geological survey.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T20:29:03.815298+00:00"
+  },
+  {
+    "id": "10d6311d-adf3-4580-8c99-0775ce2c030e",
+    "disaster_type": "flood",
+    "result": {
+      "risk_level": "critical",
+      "score": 100,
+      "max_score": 100,
+      "factors": [
+        {
+          "name": "Rainfall Amount",
+          "value": "180.0 mm",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Water Level",
+          "value": "9.2 m",
+          "impact": 35,
+          "category": "high"
+        },
+        {
+          "name": "Previous Flooding History",
+          "value": "Yes",
+          "impact": 15,
+          "category": "medium"
+        },
+        {
+          "name": "Soil Saturation",
+          "value": "90.0%",
+          "impact": 10,
+          "category": "medium"
+        }
+      ],
+      "explanation": "Extreme flood risk. Immediate evacuation recommended. All contributing factors indicate severe conditions.",
+      "precautions": [
+        "Evacuate immediately to higher ground",
+        "Call emergency services: 112",
+        "Do not attempt to drive through flooded roads",
+        "Disconnect electrical appliances",
+        "Take important documents"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official meteorological forecast.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T20:29:30.922343+00:00"
+  },
+  {
+    "id": "59b505d6-95d6-485f-8327-a3acfa5417f2",
+    "disaster_type": "landslide",
+    "result": {
+      "risk_level": "critical",
+      "score": 103,
+      "max_score": 103,
+      "factors": [
+        {
+          "name": "Rainfall Intensity",
+          "value": "55.0 mm/hr",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Soil Moisture",
+          "value": "95.0%",
+          "impact": 30,
+          "category": "high"
+        },
+        {
+          "name": "Slope Angle",
+          "value": "50.0°",
+          "impact": 20,
+          "category": "high"
+        },
+        {
+          "name": "Historical Landslides",
+          "value": "Yes",
+          "impact": 8,
+          "category": "medium"
+        },
+        {
+          "name": "Vegetation Cover",
+          "value": "Sparse",
+          "impact": 5,
+          "category": "low"
+        }
+      ],
+      "explanation": "Extreme landslide risk. Immediate evacuation of slope-adjacent areas required.",
+      "precautions": [
+        "Evacuate immediately from slope-adjacent areas",
+        "Do not attempt to cross landslide-prone roads",
+        "Call emergency services: 112",
+        "Watch for warning signs: ground cracks, unusual sounds"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official geological survey.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T20:29:32.989352+00:00"
+  },
+  {
+    "id": "1b91b229-2b25-47f3-b240-67ff73ad538e",
+    "disaster_type": "flood",
+    "result": {
+      "risk_level": "high",
+      "score": 70,
+      "max_score": 100,
+      "factors": [
+        {
+          "name": "Rainfall Amount",
+          "value": "120.0 mm",
+          "impact": 25,
+          "category": "high"
+        },
+        {
+          "name": "Water Level",
+          "value": "6.5 m",
+          "impact": 20,
+          "category": "high"
+        },
+        {
+          "name": "Previous Flooding History",
+          "value": "Yes",
+          "impact": 15,
+          "category": "medium"
+        },
+        {
+          "name": "Soil Saturation",
+          "value": "85.0%",
+          "impact": 10,
+          "category": "medium"
+        }
+      ],
+      "explanation": "High flood risk. Residents in low-lying areas should evacuate. Emergency services on standby.",
+      "precautions": [
+        "Prepare for possible evacuation",
+        "Move valuables to upper floors",
+        "Stock emergency supplies for 3 days",
+        "Monitor local news and alerts"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official meteorological forecast.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T20:47:12.338875+00:00"
+  },
+  {
+    "id": "dc611e36-b9bd-4b7f-a0e5-ca3b1280a08b",
+    "disaster_type": "flood",
+    "result": {
+      "risk_level": "critical",
+      "score": 100,
+      "max_score": 100,
+      "factors": [
+        {
+          "name": "Rainfall Amount",
+          "value": "180.0 mm",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Water Level",
+          "value": "9.2 m",
+          "impact": 35,
+          "category": "high"
+        },
+        {
+          "name": "Previous Flooding History",
+          "value": "Yes",
+          "impact": 15,
+          "category": "medium"
+        },
+        {
+          "name": "Soil Saturation",
+          "value": "90.0%",
+          "impact": 10,
+          "category": "medium"
+        }
+      ],
+      "explanation": "Extreme flood risk. Immediate evacuation recommended. All contributing factors indicate severe conditions.",
+      "precautions": [
+        "Evacuate immediately to higher ground",
+        "Call emergency services: 112",
+        "Do not attempt to drive through flooded roads",
+        "Disconnect electrical appliances",
+        "Take important documents"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official meteorological forecast.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T21:02:04.023380+00:00"
+  },
+  {
+    "id": "05d20b38-3e0a-4b4d-9870-4ae46943a91c",
+    "disaster_type": "landslide",
+    "result": {
+      "risk_level": "critical",
+      "score": 103,
+      "max_score": 103,
+      "factors": [
+        {
+          "name": "Rainfall Intensity",
+          "value": "55.0 mm/hr",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Soil Moisture",
+          "value": "95.0%",
+          "impact": 30,
+          "category": "high"
+        },
+        {
+          "name": "Slope Angle",
+          "value": "50.0°",
+          "impact": 20,
+          "category": "high"
+        },
+        {
+          "name": "Historical Landslides",
+          "value": "Yes",
+          "impact": 8,
+          "category": "medium"
+        },
+        {
+          "name": "Vegetation Cover",
+          "value": "Sparse",
+          "impact": 5,
+          "category": "low"
+        }
+      ],
+      "explanation": "Extreme landslide risk. Immediate evacuation of slope-adjacent areas required.",
+      "precautions": [
+        "Evacuate immediately from slope-adjacent areas",
+        "Do not attempt to cross landslide-prone roads",
+        "Call emergency services: 112",
+        "Watch for warning signs: ground cracks, unusual sounds"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official geological survey.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T21:02:06.081756+00:00"
+  },
+  {
+    "id": "8c85d8b6-7705-446a-b965-e3794ed44117",
+    "disaster_type": "flood",
+    "result": {
+      "risk_level": "high",
+      "score": 70,
+      "max_score": 100,
+      "factors": [
+        {
+          "name": "Rainfall Amount",
+          "value": "120.0 mm",
+          "impact": 25,
+          "category": "high"
+        },
+        {
+          "name": "Water Level",
+          "value": "6.5 m",
+          "impact": 20,
+          "category": "high"
+        },
+        {
+          "name": "Previous Flooding History",
+          "value": "Yes",
+          "impact": 15,
+          "category": "medium"
+        },
+        {
+          "name": "Soil Saturation",
+          "value": "85.0%",
+          "impact": 10,
+          "category": "medium"
+        }
+      ],
+      "explanation": "High flood risk. Residents in low-lying areas should evacuate. Emergency services on standby.",
+      "precautions": [
+        "Prepare for possible evacuation",
+        "Move valuables to upper floors",
+        "Stock emergency supplies for 3 days",
+        "Monitor local news and alerts"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official meteorological forecast.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T21:07:21.068530+00:00"
+  },
+  {
+    "id": "59db43ba-c62f-4f99-8b79-2736fe5a3482",
+    "disaster_type": "flood",
+    "result": {
+      "risk_level": "critical",
+      "score": 100,
+      "max_score": 100,
+      "factors": [
+        {
+          "name": "Rainfall Amount",
+          "value": "180.0 mm",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Water Level",
+          "value": "9.2 m",
+          "impact": 35,
+          "category": "high"
+        },
+        {
+          "name": "Previous Flooding History",
+          "value": "Yes",
+          "impact": 15,
+          "category": "medium"
+        },
+        {
+          "name": "Soil Saturation",
+          "value": "90.0%",
+          "impact": 10,
+          "category": "medium"
+        }
+      ],
+      "explanation": "Extreme flood risk. Immediate evacuation recommended. All contributing factors indicate severe conditions.",
+      "precautions": [
+        "Evacuate immediately to higher ground",
+        "Call emergency services: 112",
+        "Do not attempt to drive through flooded roads",
+        "Disconnect electrical appliances",
+        "Take important documents"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official meteorological forecast.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T22:00:19.796868+00:00"
+  },
+  {
+    "id": "bbb69bdc-fe16-4478-b124-8da21a34b2dd",
+    "disaster_type": "landslide",
+    "result": {
+      "risk_level": "critical",
+      "score": 103,
+      "max_score": 103,
+      "factors": [
+        {
+          "name": "Rainfall Intensity",
+          "value": "55.0 mm/hr",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Soil Moisture",
+          "value": "95.0%",
+          "impact": 30,
+          "category": "high"
+        },
+        {
+          "name": "Slope Angle",
+          "value": "50.0°",
+          "impact": 20,
+          "category": "high"
+        },
+        {
+          "name": "Historical Landslides",
+          "value": "Yes",
+          "impact": 8,
+          "category": "medium"
+        },
+        {
+          "name": "Vegetation Cover",
+          "value": "Sparse",
+          "impact": 5,
+          "category": "low"
+        }
+      ],
+      "explanation": "Extreme landslide risk. Immediate evacuation of slope-adjacent areas required.",
+      "precautions": [
+        "Evacuate immediately from slope-adjacent areas",
+        "Do not attempt to cross landslide-prone roads",
+        "Call emergency services: 112",
+        "Watch for warning signs: ground cracks, unusual sounds"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official geological survey.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T22:00:21.835434+00:00"
+  },
+  {
+    "id": "3ea4186e-4459-493e-b9ae-bb614605e158",
+    "disaster_type": "flood",
+    "result": {
+      "risk_level": "critical",
+      "score": 100,
+      "max_score": 100,
+      "factors": [
+        {
+          "name": "Rainfall Amount",
+          "value": "190.0 mm",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Water Level",
+          "value": "9.5 m",
+          "impact": 35,
+          "category": "high"
+        },
+        {
+          "name": "Previous Flooding History",
+          "value": "Yes",
+          "impact": 15,
+          "category": "medium"
+        },
+        {
+          "name": "Soil Saturation",
+          "value": "88.0%",
+          "impact": 10,
+          "category": "medium"
+        }
+      ],
+      "explanation": "Extreme flood risk. Immediate evacuation recommended. All contributing factors indicate severe conditions.",
+      "precautions": [
+        "Evacuate immediately to higher ground",
+        "Call emergency services: 112",
+        "Do not attempt to drive through flooded roads",
+        "Disconnect electrical appliances",
+        "Take important documents"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official meteorological forecast.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T22:01:42.487958+00:00"
+  },
+  {
+    "id": "efe8083a-c18d-469a-ae23-409536185998",
+    "disaster_type": "landslide",
+    "result": {
+      "risk_level": "critical",
+      "score": 95,
+      "max_score": 103,
+      "factors": [
+        {
+          "name": "Rainfall Intensity",
+          "value": "55.0 mm/hr",
+          "impact": 40,
+          "category": "high"
+        },
+        {
+          "name": "Soil Moisture",
+          "value": "92.0%",
+          "impact": 30,
+          "category": "high"
+        },
+        {
+          "name": "Slope Angle",
+          "value": "45.0°",
+          "impact": 12,
+          "category": "high"
+        },
+        {
+          "name": "Historical Landslides",
+          "value": "Yes",
+          "impact": 8,
+          "category": "medium"
+        },
+        {
+          "name": "Vegetation Cover",
+          "value": "Sparse",
+          "impact": 5,
+          "category": "low"
+        }
+      ],
+      "explanation": "Extreme landslide risk. Immediate evacuation of slope-adjacent areas required.",
+      "precautions": [
+        "Evacuate immediately from slope-adjacent areas",
+        "Do not attempt to cross landslide-prone roads",
+        "Call emergency services: 112",
+        "Watch for warning signs: ground cracks, unusual sounds"
+      ],
+      "disclaimer": "AI-estimated risk based on input parameters only. Not a verified official geological survey.",
+      "model_type": "rule_based_v1"
+    },
+    "created_at": "2026-11-19T22:01:42.491562+00:00"
+  }
+]

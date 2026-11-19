@@ -1,0 +1,16 @@
+{
+  "name": "SURAKSHA Disaster Management",
+  "short_name": "SURAKSHA",
+  "description": "AI-Powered Multi-Disaster Prediction & Offline Emergency Rescue Coordination Network",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#dc2626",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

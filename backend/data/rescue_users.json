@@ -1,0 +1,22 @@
+[
+  {
+    "id": "94a488af-9549-423c-9122-e99ff8c59292",
+    "username": "rescue",
+    "password": "rescue112",
+    "name": "Commander Ramesh Nayak",
+    "role": "rescue_officer",
+    "badge": "SDRF-KA-112",
+    "station": "Central Disaster Response Station, Bengaluru",
+    "created_at": "2026-11-19T19:54:24.309830+00:00"
+  },
+  {
+    "id": "2105d1b1-c50b-4226-9f5d-eb0a8cbad8fb",
+    "username": "admin",
+    "password": "admin112",
+    "name": "Director Ananya Sharma",
+    "role": "admin",
+    "badge": "NDRF-HQ-001",
+    "station": "State Emergency Operations Center",
+    "created_at": "2026-11-19T19:54:24.309830+00:00"
+  }
+]

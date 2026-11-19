@@ -1,0 +1,203 @@
+[
+  {
+    "id": "70dc61c8-a2b4-43d7-aa3f-89112cbc46aa",
+    "disaster_type": "flood",
+    "location": "Cauvery River Basin, Mandya & Mysuru",
+    "severity": "high",
+    "description": "Water discharge from KRS Dam increased to 80,000 cusecs. Flood warning issued for downstream riverbank villages.",
+    "source": "official_alert",
+    "safety_actions": [
+      "Move livestock and valuables to high ground immediately",
+      "Do not venture near Cauvery riverbanks or bridges",
+      "Keep emergency survival kit, dry food and torches ready"
+    ],
+    "latitude": 12.34,
+    "longitude": 76.64,
+    "is_active": true,
+    "notes": "DEMO DATA",
+    "created_at": "2026-11-19T18:39:38.670322+00:00"
+  },
+  {
+    "id": "3ff82dae-efcb-4abb-991e-6a960dbde50a",
+    "disaster_type": "landslide",
+    "location": "Western Ghats, Coorg & Sakleshpur",
+    "severity": "medium",
+    "description": "Continuous precipitation over 120mm in 24 hours. Soil saturation exceeding 85% on steep road cuttings.",
+    "source": "risk_assessment",
+    "safety_actions": [
+      "Avoid night driving on ghat roads",
+      "Stay alert to mud streams, falling rocks, or sudden tree tilting",
+      "Contact taluk disaster control room at 1077 in emergency"
+    ],
+    "latitude": 12.42,
+    "longitude": 75.74,
+    "is_active": true,
+    "notes": "DEMO DATA",
+    "created_at": "2026-11-19T18:39:38.670334+00:00"
+  },
+  {
+    "id": "388bf0c7-2ac4-4735-bb64-b8d6a473b54b",
+    "disaster_type": "cyclone",
+    "location": "Coastal Mangaluru & Udupi",
+    "severity": "critical",
+    "description": "Severe cyclonic storm nearing coastline. Gusts reaching 95 km/h with heavy storm surge.",
+    "source": "official_alert",
+    "safety_actions": [
+      "Evacuate low-lying fishing settlements",
+      "Stay indoors away from windows",
+      "Keep battery lamps ready"
+    ],
+    "latitude": 12.9141,
+    "longitude": 74.856,
+    "is_active": true,
+    "notes": "Verified Alert",
+    "created_at": "2026-11-19T18:50:59.049296+00:00"
+  },
+  {
+    "id": "927c34ba-3951-4b35-9cc1-3d85787815cd",
+    "disaster_type": "cyclone",
+    "location": "Coastal Mangaluru & Udupi",
+    "severity": "critical",
+    "description": "Severe cyclonic storm nearing coastline. Gusts reaching 95 km/h with heavy storm surge.",
+    "source": "official_alert",
+    "safety_actions": [
+      "Evacuate low-lying fishing settlements",
+      "Stay indoors away from windows",
+      "Keep battery lamps ready"
+    ],
+    "latitude": 12.9141,
+    "longitude": 74.856,
+    "is_active": true,
+    "notes": "Verified Alert",
+    "created_at": "2026-11-19T18:52:34.250844+00:00"
+  },
+  {
+    "id": "38191e6f-7273-462d-9514-1b3d02b4b261",
+    "disaster_type": "cyclone",
+    "location": "Coastal Mangaluru & Udupi",
+    "severity": "critical",
+    "description": "Severe cyclonic storm nearing coastline. Gusts reaching 95 km/h with heavy storm surge.",
+    "source": "official_alert",
+    "safety_actions": [
+      "Evacuate low-lying fishing settlements",
+      "Stay indoors away from windows",
+      "Keep battery lamps ready"
+    ],
+    "latitude": 12.9141,
+    "longitude": 74.856,
+    "is_active": true,
+    "broadcast_by": "Test Admin",
+    "notes": "Broadcasted via Rescue Console by Test Admin",
+    "created_at": "2026-11-19T20:14:51.473148+00:00"
+  },
+  {
+    "id": "cd3f8c44-b9d6-4c15-aab9-caec71d15873",
+    "disaster_type": "cyclone",
+    "location": "Coastal Karwar & Udupi",
+    "severity": "critical",
+    "description": "Squall winds reaching 90km/h expected with rough seas.",
+    "source": "official_alert",
+    "safety_actions": [
+      "Fishermen advised not to venture into sea",
+      "Secure roof sheets and loose objects"
+    ],
+    "latitude": 14.8135,
+    "longitude": 74.1298,
+    "is_active": true,
+    "broadcast_by": "Commander Ramesh Nayak",
+    "notes": "Broadcasted via Rescue Console by Commander Ramesh Nayak",
+    "created_at": "2026-11-19T20:17:03.878202+00:00"
+  },
+  {
+    "id": "03b03573-4c6b-4891-a877-87c7b4d417e7",
+    "disaster_type": "cyclone",
+    "location": "Coastal Mangaluru & Udupi",
+    "severity": "critical",
+    "description": "Severe cyclonic storm nearing coastline. Gusts reaching 95 km/h with heavy storm surge.",
+    "source": "official_alert",
+    "safety_actions": [
+      "Evacuate low-lying fishing settlements",
+      "Stay indoors away from windows",
+      "Keep battery lamps ready"
+    ],
+    "latitude": 12.9141,
+    "longitude": 74.856,
+    "is_active": true,
+    "broadcast_by": "Test Admin",
+    "notes": "Broadcasted via Rescue Console by Test Admin",
+    "created_at": "2026-11-19T20:29:03.868505+00:00"
+  },
+  {
+    "id": "983a6cb9-64d5-451c-8bbb-be93b9762af1",
+    "disaster_type": "cyclone",
+    "location": "Coastal Karwar & Udupi",
+    "severity": "critical",
+    "description": "Squall winds reaching 90km/h expected with rough seas.",
+    "source": "official_alert",
+    "safety_actions": [
+      "Fishermen advised not to venture into sea",
+      "Secure roof sheets and loose objects"
+    ],
+    "latitude": 14.8135,
+    "longitude": 74.1298,
+    "is_active": true,
+    "broadcast_by": "Commander Ramesh Nayak",
+    "notes": "Broadcasted via Rescue Console by Commander Ramesh Nayak",
+    "created_at": "2026-11-19T20:29:49.476347+00:00"
+  },
+  {
+    "id": "dcc63add-6591-4919-83b8-5d06061f5202",
+    "disaster_type": "cyclone",
+    "location": "Coastal Karwar & Udupi",
+    "severity": "critical",
+    "description": "Squall winds reaching 90km/h expected with rough seas.",
+    "source": "official_alert",
+    "safety_actions": [
+      "Fishermen advised not to venture into sea",
+      "Secure roof sheets and loose objects"
+    ],
+    "latitude": 14.8135,
+    "longitude": 74.1298,
+    "is_active": true,
+    "broadcast_by": "Commander Ramesh Nayak",
+    "notes": "Broadcasted via Rescue Console by Commander Ramesh Nayak",
+    "created_at": "2026-11-19T21:02:22.529616+00:00"
+  },
+  {
+    "id": "42d884cb-53e0-4e2d-8ff8-bbaaad5648bd",
+    "disaster_type": "cyclone",
+    "location": "Coastal Karwar & Udupi",
+    "severity": "critical",
+    "description": "Squall winds reaching 90km/h expected with rough seas.",
+    "source": "official_alert",
+    "safety_actions": [
+      "Fishermen advised not to venture into sea",
+      "Secure roof sheets and loose objects"
+    ],
+    "latitude": 14.8135,
+    "longitude": 74.1298,
+    "is_active": true,
+    "broadcast_by": "Commander Ramesh Nayak",
+    "notes": "Broadcasted via Rescue Console by Commander Ramesh Nayak",
+    "created_at": "2026-11-19T22:00:38.256878+00:00"
+  },
+  {
+    "id": "ec469b3d-bf00-4f76-8f87-630d73c2828b",
+    "disaster_type": "cyclone",
+    "location": "Coastal Mangaluru & Udupi",
+    "severity": "critical",
+    "description": "Severe cyclonic storm nearing coastline. Gusts reaching 95 km/h with heavy storm surge.",
+    "source": "official_alert",
+    "safety_actions": [
+      "Evacuate low-lying fishing settlements",
+      "Stay indoors away from windows",
+      "Keep battery lamps ready"
+    ],
+    "latitude": 12.9141,
+    "longitude": 74.856,
+    "is_active": true,
+    "broadcast_by": "Test Admin",
+    "notes": "Broadcasted via Rescue Console by Test Admin",
+    "created_at": "2026-11-19T22:01:42.558239+00:00"
+  }
+]

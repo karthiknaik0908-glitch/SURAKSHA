@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+venv/
+
+# Build
+dist/
+build/
+.oxlint-cache/
+
+# OS
+.DS_Store
+Thumbs.db

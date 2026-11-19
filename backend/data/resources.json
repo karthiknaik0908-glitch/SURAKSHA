@@ -1,0 +1,80 @@
+[
+  {
+    "id": "3501148b-115a-4841-84d1-46b9de416f39",
+    "type": "ambulances",
+    "name": "Ambulance Fleet",
+    "quantity": 12,
+    "available": 4,
+    "location": "Central Medical HQ, Bengaluru",
+    "unit": "vehicles",
+    "status": "active",
+    "assigned_to": null,
+    "notes": "DEMO DATA",
+    "created_at": "2026-11-19T18:39:38.668884+00:00"
+  },
+  {
+    "id": "2f9ffec5-2abd-47f2-a31d-db0c37db9059",
+    "type": "food_supplies",
+    "name": "Emergency Food Packs",
+    "quantity": 500,
+    "available": 200,
+    "location": "State Relief Warehouse, Bengaluru",
+    "unit": "packets",
+    "status": "active",
+    "assigned_to": null,
+    "notes": "DEMO DATA",
+    "created_at": "2026-11-19T18:39:38.668903+00:00"
+  },
+  {
+    "id": "cfe4b553-b844-4943-890f-a3b02bd6e4d9",
+    "type": "drinking_water",
+    "name": "Drinking Water (20L Cans)",
+    "quantity": 1000,
+    "available": 500,
+    "location": "District Supply Center, Mysuru",
+    "unit": "cans",
+    "status": "active",
+    "assigned_to": null,
+    "notes": "DEMO DATA",
+    "created_at": "2026-11-19T18:39:38.668914+00:00"
+  },
+  {
+    "id": "3f50313e-66fc-49cc-94f4-91e4c1310f95",
+    "type": "emergency_shelters",
+    "name": "Emergency Shelter Tents",
+    "quantity": 50,
+    "available": 8,
+    "location": "SDRF Base Camp, Bengaluru",
+    "unit": "tents",
+    "status": "active",
+    "assigned_to": null,
+    "notes": "DEMO DATA",
+    "created_at": "2026-11-19T18:39:38.668918+00:00"
+  },
+  {
+    "id": "e72b5665-0c4c-47fd-b028-5cf453de5778",
+    "type": "medical_supplies",
+    "name": "Trauma First Aid Kits",
+    "quantity": 300,
+    "available": 150,
+    "location": "PHC Medical Stores, Coorg",
+    "unit": "kits",
+    "status": "active",
+    "assigned_to": null,
+    "notes": "DEMO DATA",
+    "created_at": "2026-11-19T18:39:38.668924+00:00"
+  },
+  {
+    "id": "3a5c9c3e-9d98-43f7-801c-bca9373bc3fa",
+    "type": "rescue_personnel",
+    "name": "SDRF Personnel Force",
+    "quantity": 50,
+    "available": 25,
+    "location": "State Disaster Response HQ",
+    "unit": "personnel",
+    "status": "active",
+    "assigned_to": null,
+    "notes": "DEMO DATA",
+    "created_at": "2026-11-19T18:39:38.668929+00:00"
+  }
+]
