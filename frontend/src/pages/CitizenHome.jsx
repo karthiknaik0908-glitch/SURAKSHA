@@ -29,7 +29,8 @@ function SOSForm({ isOnline, tr, onSubmitted }) {
   const [form, setForm] = useState({
     name: '', phone: '', emergency_type: 'flood', num_people: 1,
     description: '', latitude: null, longitude: null, location_name: '',
-    injury_severity: 'moderate', immediate_danger: false, medical_emergency: false,
+    location_status: 'unknown', location_accuracy: null, location_captured_at: null,
+    injury: 'no', trapped: 'no', medical: 'no',
   });
   const [gpsLoading, setGpsLoading] = useState(false);
   const [gpsMsg, setGpsMsg] = useState({ type: '', text: '' });
@@ -44,11 +45,25 @@ function SOSForm({ isOnline, tr, onSubmitted }) {
     }
     navigator.geolocation.getCurrentPosition(
       (pos) => {
-        setForm(f => ({ ...f, latitude: parseFloat(pos.coords.latitude.toFixed(6)), longitude: parseFloat(pos.coords.longitude.toFixed(6)) }));
-        setGpsMsg({ type: 'success', text: `GPS: ${pos.coords.latitude.toFixed(5)}°N, ${pos.coords.longitude.toFixed(5)}°E (±${Math.round(pos.coords.accuracy)}m)` });
+        const now = new Date().toISOString();
+        setForm(f => ({
+          ...f,
+          latitude: parseFloat(pos.coords.latitude.toFixed(6)),
+          longitude: parseFloat(pos.coords.longitude.toFixed(6)),
+          location_status: 'gps',
+          location_accuracy: Math.round(pos.coords.accuracy),
+          location_captured_at: now,
+        }));
+        setGpsMsg({ type: 'success', text: tr('sos.locationCaptured') + ` ${pos.coords.latitude.toFixed(5)}°N, ${pos.coords.longitude.toFixed(5)}°E (±${Math.round(pos.coords.accuracy)}m)` });
         setGpsLoading(false);
       },
-      (err) => { setGpsMsg({ type: 'error', text: tr('sos.gpsUnavailable') + err.message }); setGpsLoading(false); },
+      (err) => {
+        let msg = '';
+        if (err.code === err.PERMISSION_DENIED) msg = tr('sos.locationPermissionDenied');
+        else msg = tr('sos.locationUnavailable');
+        setGpsMsg({ type: 'error', text: msg });
+        setGpsLoading(false);
+      },
       { enableHighAccuracy: true, timeout: 10000, maximumAge: 30000 }
     );
   };
@@ -56,7 +71,16 @@ function SOSForm({ isOnline, tr, onSubmitted }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
-    const payload = { ...form, num_people: parseInt(form.num_people, 10) || 1 };
+    const injury_severity = form.injury === 'yes' ? 'severe' : form.injury === 'unsure' ? 'moderate' : 'none';
+    const immediate_danger = form.trapped === 'yes';
+    const medical_emergency = form.medical === 'yes';
+    const payload = {
+      ...form,
+      num_people: parseInt(form.num_people, 10) || 1,
+      injury_severity,
+      immediate_danger,
+      medical_emergency,
+    };
 
     if (!isOnline) {
       try {
@@ -128,57 +152,82 @@ function SOSForm({ isOnline, tr, onSubmitted }) {
       </div>
 
       <div className="p-4 bg-[#1b1b1b] rounded-xl border border-[#262626] space-y-3">
-        <span className="text-white font-bold text-xs uppercase tracking-wide flex items-center gap-2">{tr('sos.aiTriageFactors')}</span>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <span className="text-white font-bold text-xs uppercase tracking-wide flex items-center gap-2">{tr('sos.aiTriage')}</span>
+
+        <div className="space-y-3">
           <div>
-            <label className="text-gray-400 text-xs block mb-1">{tr('sos.injurySeverity')}</label>
-            <select value={form.injury_severity} onChange={f('injury_severity')}
-              className="w-full bg-[#141414] border border-[#333] text-white rounded-lg px-2.5 py-1.5 text-xs focus:border-red-500 outline-none">
-              <option value="none">{tr('sos.injuryNone')}</option>
-              <option value="minor">{tr('sos.injuryMinor')}</option>
-              <option value="moderate">{tr('sos.injuryModerate')}</option>
-              <option value="severe">{tr('sos.injurySevere')}</option>
-              <option value="critical">{tr('sos.injuryCritical')}</option>
-            </select>
+            <label className="text-gray-300 text-xs font-semibold block mb-1.5">{tr('sos.injuryQ')}</label>
+            <div className="flex gap-2">
+              {['yes', 'no', 'unsure'].map(opt => (
+                <button key={opt} type="button" onClick={() => setForm(f => ({ ...f, injury: opt }))}
+                  className={`flex-1 py-2 rounded-lg text-xs font-bold border transition-all ${
+                    form.injury === opt ? 'bg-red-600 text-white border-red-500' : 'bg-[#141414] text-gray-400 border-[#333] hover:text-white'
+                  }`}>
+                  {tr(`sos.injury${opt.charAt(0).toUpperCase() + opt.slice(1)}`)}
+                </button>
+              ))}
+            </div>
           </div>
-          <label className="flex items-center gap-2 cursor-pointer pt-5">
-            <input type="checkbox" checked={form.immediate_danger} onChange={f('immediate_danger')} className="w-4 h-4 accent-red-600" />
-            <span className="text-gray-300 text-xs">{tr('sos.immediateDanger')}</span>
-          </label>
-          <label className="flex items-center gap-2 cursor-pointer pt-5">
-            <input type="checkbox" checked={form.medical_emergency} onChange={f('medical_emergency')} className="w-4 h-4 accent-red-600" />
-            <span className="text-gray-300 text-xs">{tr('sos.medicalEmergency')}</span>
-          </label>
+
+          <div>
+            <label className="text-gray-300 text-xs font-semibold block mb-1.5">{tr('sos.dangerQ')}</label>
+            <div className="flex gap-2">
+              {['yes', 'no', 'unsure'].map(opt => (
+                <button key={opt} type="button" onClick={() => setForm(f => ({ ...f, trapped: opt }))}
+                  className={`flex-1 py-2 rounded-lg text-xs font-bold border transition-all ${
+                    form.trapped === opt ? 'bg-red-600 text-white border-red-500' : 'bg-[#141414] text-gray-400 border-[#333] hover:text-white'
+                  }`}>
+                  {tr(`sos.danger${opt.charAt(0).toUpperCase() + opt.slice(1)}`)}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <label className="text-gray-300 text-xs font-semibold block mb-1.5">{tr('sos.medicalQ')}</label>
+            <div className="flex gap-2">
+              {['yes', 'no', 'unsure'].map(opt => (
+                <button key={opt} type="button" onClick={() => setForm(f => ({ ...f, medical: opt }))}
+                  className={`flex-1 py-2 rounded-lg text-xs font-bold border transition-all ${
+                    form.medical === opt ? 'bg-red-600 text-white border-red-500' : 'bg-[#141414] text-gray-400 border-[#333] hover:text-white'
+                  }`}>
+                  {tr(`sos.medical${opt.charAt(0).toUpperCase() + opt.slice(1)}`)}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
       <div className="p-4 bg-[#1b1b1b] rounded-xl border border-[#262626] space-y-3">
         <div className="flex items-center justify-between flex-wrap gap-2">
-          <span className="text-white font-bold text-xs uppercase tracking-wide">{tr('sos.locationSection')}</span>
+          <div className="flex items-center gap-2">
+            <span className="text-white font-bold text-xs uppercase tracking-wide">{tr('sos.locationSection')}</span>
+            {form.location_status === 'gps' && <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-600/30 text-emerald-400 border border-emerald-600/40 font-mono">{tr('sos.locationGps')}</span>}
+            {form.location_status === 'manual' && <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-600/30 text-amber-400 border border-amber-600/40 font-mono">{tr('sos.locationManualLabel')}</span>}
+            {form.location_status === 'unknown' && <span className="text-[10px] px-1.5 py-0.5 rounded bg-gray-600/30 text-gray-400 border border-gray-600/40 font-mono">{tr('sos.locationUnknown')}</span>}
+          </div>
           <button type="button" onClick={acquireGPS} disabled={gpsLoading}
             className="bg-blue-600 hover:bg-blue-700 disabled:opacity-50 text-white text-xs font-semibold px-3 py-1.5 rounded-lg flex items-center gap-1.5 transition-colors">
-            📡 {gpsLoading ? tr('sos.acquiringGps') : tr('sos.getLocation')}
+            📍 {gpsLoading ? tr('sos.acquiringGps') : tr('sos.shareLocation')}
           </button>
         </div>
         {gpsMsg.text && <p className={`text-xs ${gpsMsg.type === 'success' ? 'text-emerald-400' : 'text-amber-400'}`}>{gpsMsg.text}</p>}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <div>
-            <label className="text-gray-400 text-xs block mb-1">{tr('sos.lat')}</label>
-            <input type="number" step="0.000001" placeholder="12.9716" value={form.latitude ?? ''}
-              onChange={e => setForm(f => ({ ...f, latitude: e.target.value ? parseFloat(e.target.value) : null }))}
-              className="w-full bg-[#141414] border border-[#333] text-white rounded-lg px-2.5 py-1.5 text-xs font-mono focus:border-red-500 outline-none" />
+
+        {form.location_status === 'gps' && form.latitude && (
+          <div className="text-[11px] text-gray-400 font-mono space-y-0.5">
+            <div>{tr('sos.lat')}: {form.latitude.toFixed(6)}</div>
+            <div>{tr('sos.lng')}: {form.longitude.toFixed(6)}</div>
+            {form.location_accuracy && <div>{tr('sos.accuracy')}: {form.location_accuracy}m</div>}
+            {form.location_captured_at && <div>{tr('sos.capturedAt')}: {new Date(form.location_captured_at).toLocaleString()}</div>}
           </div>
-          <div>
-            <label className="text-gray-400 text-xs block mb-1">{tr('sos.lng')}</label>
-            <input type="number" step="0.000001" placeholder="77.5946" value={form.longitude ?? ''}
-              onChange={e => setForm(f => ({ ...f, longitude: e.target.value ? parseFloat(e.target.value) : null }))}
-              className="w-full bg-[#141414] border border-[#333] text-white rounded-lg px-2.5 py-1.5 text-xs font-mono focus:border-red-500 outline-none" />
-          </div>
-          <div>
-            <label className="text-gray-400 text-xs block mb-1">{tr('sos.locationName')}</label>
-            <input type="text" placeholder={tr('sos.locationNamePlaceholder')} value={form.location_name} onChange={f('location_name')}
-              className="w-full bg-[#141414] border border-[#333] text-white rounded-lg px-2.5 py-1.5 text-xs focus:border-red-500 outline-none" />
-          </div>
+        )}
+
+        <div>
+          <label className="text-gray-400 text-xs block mb-1">{tr('sos.locationName')}</label>
+          <input type="text" placeholder={tr('sos.locationNamePlaceholder')} value={form.location_name}
+            onChange={e => setForm(f => ({ ...f, location_name: e.target.value, location_status: e.target.value ? 'manual' : (form.location_status === 'gps' ? 'gps' : 'unknown') }))}
+            className="w-full bg-[#141414] border border-[#333] text-white rounded-lg px-2.5 py-1.5 text-xs focus:border-red-500 outline-none" />
         </div>
       </div>
     </form>
